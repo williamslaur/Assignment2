@@ -1,0 +1,116 @@
+
+body {font-family: "Helvetica", Arial, sans-serif;
+width: 960px;
+
+}
+
+.heading {
+    background-image: url("../images/sky1.jpeg");
+    background-color: #30396D;
+    color: white;
+    text-align: center;
+    width: 960px;
+    height: 420px;
+}
+
+.heading nav {
+    padding: 10px;
+    text-align: right;  
+}
+
+h1 {
+    color:#30396D;
+}
+
+article {width: 770px;
+float: left;
+clear: both;
+}
+
+aside {width: 160px;
+    float: right;
+    margin: 10px;
+    font-size: 12px;
+
+}
+
+.category {
+    border-bottom: 2px solid #30396D;
+    margin-bottom: 10px;
+    
+}
+.category nav {
+    margin-bottom: 15px;
+}
+
+.tag {
+    border-bottom: 2px solid #30396D;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+.tag nav {
+    margin-bottom: 15px;
+}
+.featured {
+    border-bottom: 2px solid #30396D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.featured img {
+    display: block;
+    margin: auto;
+    border: 2px solid #30396D;
+    padding: 2px;
+    margin-bottom: 15px;
+}
+.tag li {
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid #30396D;
+    padding: 5px;
+    margin: 3px;
+    
+}
+.article2 {
+    font-style: italic;
+    width: 340px;
+    border: 2px solid #30396D;
+    padding: 10px;
+    clear: both;
+    margin: 10px;
+    margin-left: 180px;
+}
+
+footer {clear: both;
+    color: white;
+    background-color: #30396D;
+    font-size: 12px;
+
+}
+.column {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column li {
+    list-style-type: none;
+   
+}
+.social li {
+    border: 1px solid white;
+    padding: 5px;
+    width: 240px;
+    margin: 2px;
+    text-align: center;
+
+}
