@@ -12,20 +12,19 @@ var getMonthYear = DateFormatter.getMonthYear(new Date());
 console.log('Get Month Year ' + getMonthYear);
 */
 
-
 //returns returns a the date's time with hours, minutes and AM or PM  
 getShortTime: function(date){
-    var hour = time.getHours();
-    var minutes = time.getMinutes();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
     var temp = (hour > 12) ? ' PM' : ' AM';
-    return hour + ':' +  minutes + temp;
+    return hours + ':' +  minutes + temp;
 },
 //returns a the date's time with hours, minutes, seconds and AM or PM getLongTime
 getLongTime: function(date){
-    var hours = time.gethours();
-    var minutes = time.getMinutes();
-    var seconds = time.getSeconds();
-    var temp = (hour > 12) ? ' PM' : ' AM';
+    var hours = date.gethours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    var temp = (hours > 12) ? ' PM' : ' AM';
     return hours + ", " + minutes + ", " + seconds + temp; 
 },
 //returns the date in the following format month/day/year getShortDate
@@ -48,8 +47,8 @@ getShortDateTime: function(date){
     var month = date.getMonth();
     var day = date.getDate();
     var year = date.getFullYear();
-    var hour = time.getHours();
-    var minutes = time.getMinutes();
+    var hour = date.getHours();
+    var minutes = date.getMinutes();
     var temp = (hour > 12) ? ' PM' : ' AM';
     return month + "/" + day + "/" + year + " " + hour + ":" + minutes + temp;
 },
@@ -59,8 +58,8 @@ getLongDateTime: function(date){
     var month = date.getMonth();
     var day = date.getDate();
     var year = date.getFullYear();
-    var hour = time.getHours();
-    var minutes = time.getMinutes();
+    var hour = date.getHours();
+    var minutes = date.getMinutes();
     var temp = (hour > 12) ? ' PM' : ' AM';
     return month + " " + day + ", " + year + " " + hour + ":" + minutes + temp;
 },
@@ -71,10 +70,11 @@ getExtendedDateTime: function(date){
     var month = date.getMonth();
     var date = date.getDate();
     var year = date.getFullYear();
-    var hour = time.getHours();
-    var minutes = time.getMinutes();
-    return day + " " + month + " " + date + ", " + year + " " + hour + ":" + minutes;
-},
+    var hour = date.getHours();
+    var minutes = date.getMinutes();
+    var temp = (hour > 12) ? ' PM' : ' AM';
+    return day + " " + month + " " + date + ", " + year + " " + hour + ":" + minutes + temp;
+}}
 
 //data for console.log
 var date = new Date();
